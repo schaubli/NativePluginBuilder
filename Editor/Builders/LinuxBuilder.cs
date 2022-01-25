@@ -83,11 +83,7 @@ namespace iBicha
 				pluginImporter.SetCompatibleWithEditor (true);
 				pluginImporter.SetEditorData ("OS", "Linux");
 				pluginImporter.SetEditorData ("CPU", buildOptions.Architecture.ToString());
-				if (buildOptions.Architecture == Architecture.x86) {
-					pluginImporter.SetCompatibleWithPlatform (BuildTarget.StandaloneLinux, true);
-				} else {
-					pluginImporter.SetCompatibleWithPlatform (BuildTarget.StandaloneLinux64, true);
-				}
+				pluginImporter.SetCompatibleWithPlatform (BuildTarget.StandaloneLinux64, true);
 
                 pluginImporter.SaveAndReimport ();
 			}
